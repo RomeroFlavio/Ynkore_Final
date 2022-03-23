@@ -1,0 +1,155 @@
+@mixin barras($tip, $row, $bet, $BGcolor, $pad, $cen) {
+    display: $tip;
+    flex-direction: $row;
+    justify-content: $bet;
+    background-color: $BGcolor;
+    padding: $pad;
+    align-items: $cen;
+}
+
+.footer, .header{
+    @include barras(flex, row, space-between, rgba(28, 253, 178, 0.719), 0.1%, center)
+}
+
+header.header {
+    grid-area: header;
+    position: sticky;
+    top: 0px;
+        div.caja-1{
+            margin-left: ap-get($DistaSocial , mar-2);
+        }
+        nav.caja-2{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                ul.ul-head{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                        li.li-head{
+                            margin: map-get($DistaSocial , mar-1);
+                                a.a-head{
+                                    @extend .boton;
+                                }
+                                a.a-head:hover{
+                                    @extend .boton2;
+                                }
+                                a.a-head:active{
+                                    @extend .boton3;
+                                }
+
+                        }
+                }
+        }
+        div.caja-3{
+            margin-right: ap-get($DistaSocial , mar-2);
+        }
+}
+
+main.main{
+    min-height: 700px;
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: map-get($DistaSocial , mar-2);
+        div.div-main{
+            width: 90%;
+            background-color: map-get($coloresBG , colorPrimario);
+            border-radius: map-get($DistaSocial , bord);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: map-get($DistaSocial , mar-1);
+                div.div-totu{
+                    margin: map-get($DistaSocial , mar-2);
+                }
+                div.div-des{
+                    width: 95%;
+                    margin: map-get($DistaSocial , mar-2);
+                        h3{
+                            margin: map-get($DistaSocial , mar-2);
+                        }
+                        p{
+                            margin: map-get($DistaSocial , mar-2);
+                        }
+                }
+                div.div-img{
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    justify-content: center;
+                        img{
+                            margin: map-get($DistaSocial , mar-2);
+                            border-radius: map-get($DistaSocial , bord);
+                        }
+                }
+        }
+}
+
+aside.aside{
+    min-height: 700px;
+    grid-area: aside;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: map-get($DistaSocial , mar-2);
+        div.div-aside{
+            width: 90%;
+            background-color: map-get($coloresBG , colorPrimario);
+            border-radius: map-get($DistaSocial , bord);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: map-get($DistaSocial , mar-1);
+                div.aside-titu{
+                    margin: map-get($DistaSocial , mar-2);
+                    text-align: center;
+                }
+                div.div-img{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    margin: map-get($DistaSocial , mar-2);
+                        img{
+                            margin: map-get($DistaSocial , mar-2);
+                        }
+                }
+        }
+}
+
+footer.footer{
+    grid-area: footer;
+    padding: map-get($DistaSocial , mar-1);
+    justify-content: space-around;
+    flex-wrap: wrap;
+        div.div-col{
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+                h6{
+                    font-size: 20px;
+                    margin: map-get($DistaSocial , mar-2);
+                    text-align: center;
+                }
+                a.a-div{
+                    width: 60px;
+                    height: 60px;
+                    display: flex;
+                    justify-content: center;
+                    justify-content: center;
+                    align-items: center;
+                }
+        }
+
+}

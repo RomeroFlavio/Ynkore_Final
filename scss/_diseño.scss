@@ -1,3 +1,10 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0%;
+    padding: 0%;
+}
 /* FONDO */
 .fondo{
     width: 100%;
@@ -8,6 +15,56 @@
     background-size: cover;
 }
 /* FONDO */
+
+/* ENTREGA FINAL */
+$coloresBG:(
+	colorPrimario:rgba(28, 253, 178, 0.719)!important,
+	colorSecundario:rgba(210, 106, 241, 0.68),
+	titulo:rgb(205, 117, 231),
+	sombra:rgb(0, 0, 0),
+	sinColor:rgba(255, 255, 255, 0)!important,
+
+);
+
+@each $tinte, $color in $coloresBG{
+	.#{$tinte}{
+		background-color: $color;
+	}
+}
+
+
+$DistaSocial:(
+    mar-1: 0.1%,
+    mar-2: 1%,
+    bord: 5px,
+    
+);
+
+.boton{
+    background: rgba(210, 106, 241, 0.68);
+    padding: 10px 10px!important;
+    border-radius: 9px!important;
+    text-align: center;
+}
+
+.boton2{
+    width: 10px 21px!important;
+    border-radius: 9px!important;
+    background: #cd75e7;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+    box-shadow: 7px 5px 25px 1px #000000;
+}
+
+.boton3{
+    transform: scale(0.97);
+    box-shadow: 7px 5px 25px -10px #000000;
+}
+
+
+/* ENTREGA FINAL */
 
 /* SEPARACIÓN Y BORDES*/
 .marpad{
@@ -30,24 +87,6 @@
 
 /* SEPARACIÓN Y BORDES*/
 
-/* COLORES */
-.color_aqua{
-    background-color: rgba(28, 253, 178, 0.719)!important;
-}
-
-.sin_color{
-    background-color:rgba(255, 255, 255, 0)!important;
-}
-
-.chicle{
-    background: rgba(210, 106, 241, 0.68);
-}
-
-.titulo{
-    background: #cd75e7;
-}
-/* COLORES */
-
 /* ESTILO NAV */
 
 .estilo{
@@ -67,9 +106,6 @@
     text-align: center;
     cursor: pointer;
     transition: 0.4s;
-}
-
-.estilo:hover {
     box-shadow: 7px 5px 25px 1px #000000;
 }
 
@@ -79,6 +115,7 @@
 }
 /* ESTILO NAV */
 
+/* BOOSTRAP */
 .campos{
     width: 100%;
 }
@@ -86,6 +123,10 @@
 .test{
     width: 65%;
 }
+
+/* BOOSTRAP */
+
+
 /*IMG achicadas temporalmente*/
 .foto{
     margin: auto;
@@ -115,7 +156,7 @@
 }
 
 .img_qs{
-    width: 450px;
+    width: 40%;
 }
 
 /*IMG achicadas temporalmente*/
