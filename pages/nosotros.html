@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ynkore_nosotros</title>
     <link rel="shortcut icon" href="../assets/images/logo/logo_fav.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body class="fondo grid">
@@ -43,7 +44,7 @@
             </div>
     </header>
     <main class="main">
-        <div class="div-main">
+        <div data-aos="fade-right" class="div-main">
             <div class="div-titu">
                 <h1>Ynkore</h1>
             </div>
@@ -62,7 +63,7 @@
         </div>
     </main>
     <aside class="aside">
-        <div class="div-aside">
+        <div data-aos="fade-left" class="div-aside">
             <div class="aside-titu">
                 <h2>Quienes confiaron en nuestro producto</h2>
             </div>
@@ -100,5 +101,9 @@
             <h6 class="">&copy; Ynkore 2022-2023</h6>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
