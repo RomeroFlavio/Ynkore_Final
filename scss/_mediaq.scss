@@ -17,7 +17,7 @@
             position: relative;
             
             div.caja-1{
-                width: 50%;
+                width: 49%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -34,7 +34,7 @@
                     }
             }
             div.caja-3{
-                width: 50%;
+                width: 49%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -42,15 +42,15 @@
     }
 
     main.main{
-        margin-top: -5%;
-        margin-bottom: -8%;
+      margin-top: -5%;
+      margin-bottom: -5%;
     }
     
     aside.aside{
-        margin-top: -8%;
-        margin-bottom: -3%;
+        margin-top: -5%;
     }
     footer.footer{
+        margin-top: map-get($DistaSocial , mar-2);
         flex-wrap: wrap;
             div.pos-2{
                 order: 1;
@@ -91,7 +91,21 @@
     order: 3;
 }
 
+.cosa1{
+    order: 3;
+}
 
+.cosa2{
+    order: 1;
+}
+
+.cosa3{
+    order: 2;
+}
+
+.cosa4{
+    order: 4;
+}
 
 .media{
     width: 95%;
@@ -130,14 +144,26 @@
 .no_sticky{
      position: relative;
 }
-    
-.caja2{
+
+.cosa1{
     order: 3;
 }
 
-.posicion{
-    display: flex;
-    flex-direction: column;
+.cosa2{
+    order: 1;
+}
+
+.cosa3{
+    order: 2;
+}
+
+.cosa4{
+    order: 4;
+}
+
+.media{
+    width: 95%;
+    margin: auto;
 }
 
 .media{
@@ -159,13 +185,5 @@
     width: 400px;
 }
 
-.posicion{
-    display: flex!important;
-    flex-direction: column!important;
-}
-
-.campos2{
-    width: 100%;
-}
 
 }

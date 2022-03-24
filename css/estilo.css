@@ -146,7 +146,7 @@ header.header {
   position: sticky;
   top: 0px; }
   header.header div.caja-1 {
-    margin-left: ap-get((mar-1: 0.1%, mar-2: 1%, bord: 5px), mar-2); }
+    margin-left: 1%; }
   header.header nav.caja-2 {
     width: 50%;
     display: flex;
@@ -162,7 +162,7 @@ header.header {
       header.header nav.caja-2 ul.ul-head li.li-head {
         margin: 0.1%; }
   header.header div.caja-3 {
-    margin-right: ap-get((mar-1: 0.1%, mar-2: 1%, bord: 5px), mar-2); }
+    margin-right: 1%; }
 
 main.main {
   min-height: 700px;
@@ -260,7 +260,7 @@ footer.footer {
     flex-wrap: wrap;
     position: relative; }
     header.header div.caja-1 {
-      width: 50%;
+      width: 49%;
       display: flex;
       justify-content: center;
       align-items: center; }
@@ -273,17 +273,17 @@ footer.footer {
         header.header nav.caja-2 ul.ul-head li.li-head {
           margin: 1%; }
     header.header div.caja-3 {
-      width: 50%;
+      width: 49%;
       display: flex;
       justify-content: center;
       align-items: center; }
   main.main {
     margin-top: -5%;
-    margin-bottom: -8%; }
+    margin-bottom: -5%; }
   aside.aside {
-    margin-top: -8%;
-    margin-bottom: -3%; }
+    margin-top: -5%; }
   footer.footer {
+    margin-top: 1%;
     flex-wrap: wrap; }
     footer.footer div.pos-2 {
       order: 1;
@@ -309,6 +309,14 @@ footer.footer {
     position: relative; }
   .caja2 {
     order: 3; }
+  .cosa1 {
+    order: 3; }
+  .cosa2 {
+    order: 1; }
+  .cosa3 {
+    order: 2; }
+  .cosa4 {
+    order: 4; }
   .media {
     width: 95%;
     margin: auto; }
@@ -333,11 +341,17 @@ footer.footer {
 @media only screen and (min-width: 491px) and (max-width: 991px) {
   .no_sticky {
     position: relative; }
-  .caja2 {
+  .cosa1 {
     order: 3; }
-  .posicion {
-    display: flex;
-    flex-direction: column; }
+  .cosa2 {
+    order: 1; }
+  .cosa3 {
+    order: 2; }
+  .cosa4 {
+    order: 4; }
+  .media {
+    width: 95%;
+    margin: auto; }
   .media {
     width: 60%;
     margin: auto; }
@@ -348,9 +362,4 @@ footer.footer {
 /* No requiere de @media para 1024 */
 @media only screen and (min-width: 992px) and (max-width: 1140px) {
   .img_qs {
-    width: 400px; }
-  .posicion {
-    display: flex !important;
-    flex-direction: column !important; }
-  .campos2 {
-    width: 100%; } }
+    width: 400px; } }

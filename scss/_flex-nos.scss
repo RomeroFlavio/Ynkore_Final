@@ -16,7 +16,7 @@ header.header {
     position: sticky;
     top: 0px;
         div.caja-1{
-            margin-left: ap-get($DistaSocial , mar-2);
+            margin-left: map-get($DistaSocial , mar-2);
         }
         nav.caja-2{
             width: 50%;
@@ -46,7 +46,7 @@ header.header {
                 }
         }
         div.caja-3{
-            margin-right: ap-get($DistaSocial , mar-2);
+            margin-right: map-get($DistaSocial , mar-2);
         }
 }
 
